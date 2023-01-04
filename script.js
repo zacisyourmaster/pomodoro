@@ -8,7 +8,7 @@ let timerTime = 2700;
 function startTimer() {
   timerInterval = setInterval(() => {
     timerTime--;
-    if(timerTime==2695){
+    if(timerTime==0){
         resetTimer(540);
         
       }
