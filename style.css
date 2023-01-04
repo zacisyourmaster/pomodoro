@@ -1,0 +1,69 @@
+html{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: rgb(20, 20, 20);
+    color:aliceblue;
+    overflow: auto;
+}
+#header{
+    height: 60px;
+    width: 90%;
+    padding: 2vh 2vh 0;
+    display: flex;
+    justify-content: space-between;
+    margin:auto auto 10%;
+}
+button[type='settings']{
+    background-color: rgba(255, 255, 255, 0.1);
+    color: aliceblue;
+    border: none;
+    border-radius: 5px;
+    height: fit-content;
+    padding: 2%;
+    box-sizing: border-box;
+}
+.container #timer{
+    text-align: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, .1);
+    border-radius: 10px;
+    padding: 20px 0px 30px;
+    max-width: 620px;
+    margin: auto;
+    border: 1px solid #ccc
+}
+.phase-buttons{ 
+    display: inline-flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+}
+button[type="time-buttons"], button[type='start']{
+    color: inherit;
+    border: none;
+    padding: 2px 12px;
+    height: 28px;
+    font-size: 16px;
+    background: none;
+}
+.timer-display{
+    font-size: 36px;
+    background-color: rgba(255, 255, 255, 0.113);
+    margin: auto 40%;
+    border-radius: 4px;
+    text-align: center;
+}
+.start, .stop, .reset{
+    font-size: 20px;
+    padding: auto 12px;
+    margin-top: 20px;
+    background-color: rgb(255, 255, 255);
+    color: rgba(20, 20, 20, 0.9);
+    font-weight: 300px;
+    border-radius: 4px;
+    height: fit-content;
+    display: inline-flex;
+    justify-content: space-between;
+    border: none;
+}
