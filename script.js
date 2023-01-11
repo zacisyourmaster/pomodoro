@@ -1,9 +1,12 @@
+const timerDisplay = document.querySelector('.timer-display');
 const startButton = document.querySelector('.start');
 const stopButton = document.querySelector('.stop');
 const resetButton = document.querySelector('.reset');
-const shortBreak =document.querySelector('.short-break');
+const shortBreak = document.querySelector('.short-break');
 let timerInterval;
-let timerTime = 2700;
+let timerTime = 1500;
+let defTime = timerTime;
+let totalTime = 0;
 function startTimer() {
   timerInterval = setInterval(() => {
     timerTime--;
@@ -15,7 +18,7 @@ function stopTimer() {
 }
 function resetTimer(){
     clearInterval(timerInterval)
-    timerTime=2700;
+    timerTime=defTime;
     displayTime();
 }
 function displayTime() {
@@ -26,12 +29,10 @@ function displayTime() {
     }
     timerDisplay.textContent = `${minutes}:${seconds}`;
 }
-function shortTimer(){
-  clearInterval(timerInterval)
-  timerTime=540;
-  displayTime();
-}
 startButton.addEventListener('click', startTimer);
 stopButton.addEventListener('click', stopTimer);
 resetButton.addEventListener('click', resetTimer);
-shortBreak.addEventListener('click', shortTimer);
+/*shortBreak.addEventListener('click', function(){
+  timerTime=300;
+  resetTimer();
+});*/
