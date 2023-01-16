@@ -4,18 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>45:00 - ZachPomodoro</title>
+    <title>25:00 - ZachPomodoro</title>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <div class="container">
         <div id="header">
                 <h1 class="header-text">Zach's Pomodoro</h1>
-                <button class="settings-button">Settings</button>
         </div>
     </div>
     <div class="container">
-        <div id="timer">
+        <div class="timer">
             <div class="phase-buttons">
                 <button class="focus-button">Focus</button>
                 <button class="short-break">Short Break</button>
@@ -27,7 +26,15 @@
               <button class="stop">Stop</button>
               <button class="reset">Reset</button>
             </div>
-            <h2>You have spent ____ time focusing!<br>Good Work!</h2>
+            <h2 class="cycle">Cycles: 0</h2>
+        </div>
+        <div class="info">
+          <h3>Instructions:</h3>
+          <p>Focus: 25 minutes<br>Short Break: 5 minutes<br>Focus: 15 minutes<br>
+            Reset will always reset to focus time and "Cycles" displays how many times you've focused.
+          
+          </p>
+          
         </div>
     </div>
     <div class="footer">
