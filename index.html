@@ -1,44 +1,43 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>25:00 - ZachPomodoro</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <div class="container">
-        <div id="header">
-                <h1 class="header-text">Zach's Pomodoro</h1>
-        </div>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>25:00 - ZachPomodoro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header id="header">
+    <h1 id="header-text">Zach's Pomodoro</h1>
+    <a class="profile-link" href="https://zacisyourmaster.github.io">By Zach</a>
+  </header>
+
+  <main id="timer">
+    <div id="phase-buttons">
+      <button id="focus">Focus</button>
+      <button id="short-break">Short Break</button>
+      <button id="long-break">Long Break</button>
     </div>
-    <div class="container">
-        <div class="timer">
-            <div class="phase-buttons">
-                <button class="focus">Focus</button>
-                <button class="short-break">Short Break</button>
-                <button class="long-break">Long Break</button>
-            </div>
-            <div class="timer-display">25:00</div>
-            <div id="start-stop">
-              <button class="start">Start</button>
-              <button class="stop">Stop</button>
-              <button class="reset">Reset</button>
-            </div>
-            <h2 class="cycle">Cycles: 0</h2>
-        </div>
-        <div class="info">
-          <h3>Instructions:</h3>
-          <p>Focus: 25 minutes<br>Short Break: 5 minutes<br>Focus: 15 minutes<br>
-            Reset will always reset to focus time and "Cycles" displays how many times you've focused.
-          
-          </p>
-          
-        </div>
+    <div id="timer-display">25:00</div>
+    <div id="start-stop">
+      <button id="start">Start</button>
+      <button id="stop">Stop</button>
+      <button id="reset">Reset</button>
     </div>
-    <div class="footer">
-    </div>
-    <script src="script.js"></script>
-  </body>
+    <h2 id="cycle">Cycles: 0</h2>
+  </main>
+
+  <footer id="info">
+    <h3>Instructions:</h3>
+    <p>Focus: 25 minutes<br>Short Break: 5 minutes<br>Focus: 15 minutes<br>
+      Reset will always reset to focus time and "Cycles" displays how many times you've focused.
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
 </html>

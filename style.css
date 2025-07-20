@@ -1,39 +1,56 @@
-html{
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+html {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-body{
+
+body {
     background-color: rgb(20, 20, 20);
-    color:aliceblue;
+    color: aliceblue;
     overflow: auto;
     max-width: 100vw;
+    margin: 0;
+    padding: 0;
 }
-#header{
+
+#header {
     height: 60px;
     width: 90%;
     padding: 2vh 2vh;
     display: flex;
     justify-content: space-between;
-    margin:auto auto 5%;
+    margin: auto auto 5%;
     border-bottom: 1px solid rgba(204, 204, 204, 0.5);
 }
-button{
+
+#header-text {
+    margin: 0;
+    align-self: center;
+}
+.profile-link {
+    text-decoration: underline;
+    color: aliceblue;
+    align-self: center;
+    font-weight: bold;
+}
+.profile-link:visited {
+    color: inherit;
+}
+button {
     cursor: pointer;
     display: inline-flex;
     justify-content: center;
     border: none;
     padding: 2px 12px;
-    justify-content: space-between;
     font-size: 20px;
-    background-color: rgba(255, 255, 255, .1);
+    background-color: rgba(255, 255, 255, 0.1);
     color: aliceblue;
     margin: 1em auto;
     border-radius: 2px;
-
 }
-.timer{
+
+#timer {
     text-align: center;
     justify-content: center;
-    background-color: rgba(255, 255, 255, .1);
+    background-color: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
     padding: 20px 0px 30px;
     max-width: 620px;
@@ -41,10 +58,46 @@ button{
     border: 1px solid #ccc;
 }
 
-.timer-display{
+#timer-display {
     font-size: 100px;
     border-radius: 4px;
     font-weight: bold;
-    padding:2px 12px;
+    padding: 2px 12px;
     min-width: fit-content;
+    margin: 20px 0;
+}
+
+/* #phase-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+} */
+
+/* #start-stop {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+} */
+
+#cycle {
+    margin-top: 20px;
+}
+
+#info {
+    width: 90%;
+    max-width: 620px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+#info h3 {
+    margin-top: 0;
+}
+
+#info p {
+    margin-bottom: 0;
 }
